@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "debug":"node --inspect-brk node_modules/.bin/nightwatch",
-    "test": "nightwatch"
+    "debug": "node --inspect-brk node_modules/.bin/nightwatch",
+    "test": "nightwatch",
+    "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js",
+    "test:browserstackFirefox": "nightwatch -c nightwatch.browserstack.conf.js '--env' 'default,firefox'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chromedriver": "^101.0.0",
+    "dotenv": "^16.0.0",
     "nightwatch": "^2.1.4"
   }
 }
