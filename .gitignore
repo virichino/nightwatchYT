@@ -1,2 +1,4 @@
-node_modules/
-tests_output/
+node_modules
+tests_output
+vrt/latest
+vrt/diff

@@ -7,13 +7,16 @@
     "debug": "node --inspect-brk node_modules/.bin/nightwatch",
     "test": "nightwatch",
     "test:browserstack": "nightwatch -c nightwatch.browserstack.conf.js",
-    "test:browserstackFirefox": "nightwatch -c nightwatch.browserstack.conf.js '--env' 'default,firefox'"
+    "test:browserstackFirefox": "nightwatch -c nightwatch.browserstack.conf.js '--env' 'default,firefox'",
+    "test:vrt": "nightwatch -c nightwatch.vrt.conf.js",
+    "consolidate:vrt": "CONSOLIDATE==1 nightwatch -c nightwatch.vrt.conf.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chromedriver": "^101.0.0",
     "dotenv": "^16.0.0",
-    "nightwatch": "^2.1.4"
+    "nightwatch": "^2.1.4",
+    "nightwatch-vrt": "^0.2.10"
   }
 }
