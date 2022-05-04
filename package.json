@@ -1,0 +1,16 @@
+{
+  "name": "nigthwatchyt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug":"node --inspect-brk node_modules/.bin/nightwatch",
+    "test": "nightwatch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^101.0.0",
+    "nightwatch": "^2.1.4"
+  }
+}
