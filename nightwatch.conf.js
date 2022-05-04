@@ -7,7 +7,17 @@ module.exports = {
     'webdriver': {
         'start_process': true,
         'server_path': 'node_modules/chromedriver/lib/chromedriver/chromedriver.exe',
-        'port': 443
+        'port': 80
+    },
+    'desiredCapabilities': {
+        "goog:chromeOptions": {
+            "excludeSwitches": [
+                "enable-logging",
+                "enable-automation"
+            ], "args": [
+                "--lang=en-GB",
+            ]
+        }
     },
 
     'test_settings': {
